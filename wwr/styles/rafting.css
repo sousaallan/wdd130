@@ -1,24 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=robotofamily=rocksalt&display=swap');
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto|Rock+Salt&display=swap');
+
+/* Define CSS variables for the color scheme */
 :root {
     --primary-color: #29AB87;
     --secondary-color: #5DE2FC;
-    --accent1-color: #000000;
-    --accent2-color: #301934;
-
-    --heading-font: 'Rock Salt', serif;
-    --heading-color: #000000;
-    --paragraph-font:'Roboto', serif;
-    --paragraph-color: #000000;
-    --nav-background-color: #29AB87;
-    --nav-link-color: #34FF81;
-    --nav-hover-link-color: #000000;
-    --nav-hover-background-color: #000000; 
+    --accent1-color: #070bf8;
+    --accent2-color: #000;
+    
+    --heading-font: 'Rock Salt', cursive;
+    --heading-color: var(--accent1-color); /* Heading text color */
+    
+    --paragraph-font: 'Roboto', sans-serif;
+    --paragraph-color: var(--accent2-color); /* Paragraph text color */
+    
+    --nav-background-color: var(--primary-color); /* Navigation bar background color */
+    --nav-link-color: #FFFFFF; /* Navigation bar link text color */
+    --nav-hover-link-color: var(--accent1-color); /* Navigation bar link text color on hover */
+    --nav-hover-background-color: var(--secondary-color); /* Navigation bar background color on hover */
 }
-nav {
+
+/* Style headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+h1 {
+    color: var(--accent2-color)
+}
+
+/* Style paragraphs */
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+}
+
+/* Remove underlines from social media links */
+.social-media a {
     text-decoration: none;
 }
+
+/* Limit the entire width of the page */
 .container {
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 20px;
+}
+body {
+    background-color: var(--primary-color);
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
