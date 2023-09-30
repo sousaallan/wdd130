@@ -26,7 +26,8 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
 }
 h1 {
-    color: var(--accent2-color)
+    color: var(--accent2-color);
+    position: absolute;
 }
 
 /* Style paragraphs */
@@ -53,4 +54,14 @@ body {
     display: block;
     width: 100%;
     height: auto;
+}
+article {
+    position: absolute;
+}
+/* styles.css */
+
+/* Apply the float property to the image inside the article */
+article img {
+    float: right;
+    margin: 0 0 10px 10px; /* Add some margin for spacing */
 }
