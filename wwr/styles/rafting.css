@@ -5,7 +5,7 @@
 :root {
     --primary-color: #29AB87;
     --secondary-color: #5DE2FC;
-    --accent1-color: #070bf8;
+    --accent1-color: white;
     --accent2-color: #000;
     
     --heading-font: 'Rock Salt', cursive;
@@ -19,49 +19,194 @@
     --nav-hover-link-color: var(--accent1-color); /* Navigation bar link text color on hover */
     --nav-hover-background-color: var(--secondary-color); /* Navigation bar background color on hover */
 }
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    text-align: left; /* Alinha o texto no centro */
+}
+/* Estilo para o cabeçalho */
+header {
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    align-items: center; /* Alinhar o conteúdo no centro */
+    display: grid;
+    grid-template-columns: 0.5fr 100px 2fr;
+    grid-gap: 10px;
+}
 
-/* Style headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--heading-color);
+/* Estilo para a imagem do logo */
+header img {
+    grid-column: 2/3;
+    width: 100px; /* Largura da imagem do logo */
+    height: 100px; /* Altura da imagem do logo */
+    border-radius: 50%; /* Fazer a imagem do logo circular */
 }
-h1 {
-    color: var(--accent2-color);
+
+/* Estilo para a lista de navegação no cabeçalho */
+header ul.navigation {
+    padding: 0; /* Remover o espaçamento interno da lista */
+}
+
+/* Estilo para os links de navegação no cabeçalho */
+header ul.navigation a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor dos links de navegação */
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+/* Estilo para os links de navegação quando o mouse passa sobre eles */
+header ul.navigation a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse sobre os links */
+    color: var(--accent2-color)
+}
+/*HEADER*/
+/*DIV*/
+div {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 10px; /* Adiciona margens entre os elementos*/
+    position: relative;
+    height: 500px;
+    border-radius: 5%;
+}
+
+div h1 {
+    grid-column: 5/7;
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco transparente */
+    text-align: center;
+    border: 3px solid var(--primary-color);
+    border-radius: 5%;
+}
+.hero {
+
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cobrir a largura completa do contêiner */
+    height: 100%; /* Ajustar a altura automaticamente */
+    z-index: -1; /* Coloca a imagem hero atrás de outros elementos */
+    border-radius: 5%;
 }
+
+article {
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / 8; /* Inicia na 3ª coluna e termina na 4ª coluna */
+    grid-row: 5 / 10;    /* Inicia na 4ª linha e termina na 5ª linha */     
+}
+
+article img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--primary-color);
+    grid-column: 8 / 11; /* Inicia na 3ª coluna e termina na 4ª coluna */
+    grid-row: 5 / 10;    /* Inicia na 4ª linha e termina na 5ª linha */     
+    border-radius: 20%;
+}
+
+article p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color--);
+    margin: 20pxs;
+    border: 1px var(--primary-color);
+    padding: 25px;
+    border: 3px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco transparente */
+    border-radius: 20%;
+    }
+/*DIV*/
+/*SECTION*/
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 30px);
+    height: 270px;
+}
+
+section p:first-of-type {
+    padding: 20px;
+    grid-column: 1/4;
+    grid-row: 3;
+}
+
+section p:nth-of-type(2) {
+    padding: 20px;
+    grid-column: 5/8;
+    grid-row: 3;
+}
+
+h2 {
+    grid-column: 4;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+section img{
+    width: 170px;
+    height: 160px;
+    grid-column: 5/4;
+    grid-row: 3/6;
+    border: 0;
+    border-radius: 50%;
+}
+
+.img1 {
+    grid-column: 1;
+    grid-row: 4;
+    padding: 5px;
+    
+}
+.img2 {
+    grid-column: 2;
+    grid-row: 4;
+    padding: 5px;
+}
+.img3 {
+    grid-column: 3;
+    grid-row: 4;
+    padding: 5px;
+}
+.img4 {
+    grid-column: 4;
+    grid-row: 4;
+    padding: 5px;
+}
+.img5 {
+
+    grid-column: 5;
+    grid-row: 4;
+    padding: 5px;
+}
+.pix {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+/* Estilo para a outra imagem */
+img[src="images/teacher.png"] {
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    left: 20px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 1; /* Coloca a outra imagem acima da imagem hero */
+}
+
+
 
 /* Style paragraphs */
-p {
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color);
-}
 
 /* Remove underlines from social media links */
 .social-media a {
     text-decoration: none;
 }
 
-/* Limit the entire width of the page */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.box {
+    background-color: var(--primary-color--);
     padding: 20px;
+    border: 1px solid #000;
+    margin: 10px; /* Adiciona margens entre os elementos */
 }
-body {
-    background-color: var(--primary-color);
-}
-.hero img {
-    display: block;
-    width: 100%;
+footer img {
+    width: 50px;
     height: auto;
-}
-article {
-    position: absolute;
-}
-/* styles.css */
-
-/* Apply the float property to the image inside the article */
-article img {
-    float: right;
-    margin: 0 0 10px 10px; /* Add some margin for spacing */
 }
