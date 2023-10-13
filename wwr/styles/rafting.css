@@ -1,0 +1,261 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto|Rock+Salt&display=swap');
+
+/* Define CSS variables for the color scheme */
+:root {
+    --primary-color: #29AB87;
+    --secondary-color: #5DE2FC;
+    --accent1-color: white;
+    --accent2-color: #000;
+    
+    --heading-font: 'Rock Salt', cursive;
+    --heading-color: var(--accent1-color); /* Heading text color */
+    
+    --paragraph-font: 'Roboto', sans-serif;
+    --paragraph-color: var(--accent2-color); /* Paragraph text color */
+    
+    --nav-background-color: var(--primary-color); /* Navigation bar background color */
+    --nav-link-color: #FFFFFF; /* Navigation bar link text color */
+    --nav-hover-link-color: var(--accent1-color); /* Navigation bar link text color on hover */
+    --nav-hover-background-color: var(--secondary-color); /* Navigation bar background color on hover */
+}
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    text-align: left; /* Alinha o texto no centro */
+}
+/* Estilo para o cabeçalho */
+header {
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    align-items: center; /* Alinhar o conteúdo no centro */
+    display: grid;
+    grid-template-columns: 0.5fr 100px 2fr;
+    grid-gap: 10px;
+}
+
+/* Estilo para a imagem do logo */
+header img {
+    grid-column: 2/3;
+    width: 100px; /* Largura da imagem do logo */
+    height: 100px; /* Altura da imagem do logo */
+    border-radius: 50%; /* Fazer a imagem do logo circular */
+}
+nav {
+    display: flex;
+}
+/* Estilo para a lista de navegação no cabeçalho */
+nav ul  {
+    display: flex;
+
+} 
+
+/* Estilo para os links de navegação no cabeçalho */
+header ul.navigation a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: white; /* Cor dos links de navegação */
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+/* Estilo para os links de navegação quando o mouse passa sobre eles */
+header ul.navigation a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse sobre os links */
+    color: var(--accent2-color)
+}
+/*HEADER*/
+/*DIV*/
+div {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 10px; /* Adiciona margens entre os elementos*/
+    position: relative;
+    height: 500px;
+    border-radius: 5%;
+}
+
+div h1 {
+    grid-column: 5/7;
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco transparente */
+    text-align: center;
+    border: 3px solid var(--primary-color);
+    border-radius: 5%;
+}
+.hero {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cobrir a largura completa do contêiner */
+    height: 100%; /* Ajustar a altura automaticamente */
+    z-index: -1; /* Coloca a imagem hero atrás de outros elementos */
+    border-radius: 5%;
+}
+
+article {
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / 8; /* Inicia na 3ª coluna e termina na 4ª coluna */
+    grid-row: 5 / 10;    /* Inicia na 4ª linha e termina na 5ª linha */     
+}
+
+article img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--primary-color);
+    grid-column: 8 / 11; /* Inicia na 3ª coluna e termina na 4ª coluna */
+    grid-row: 5 / 10;    /* Inicia na 4ª linha e termina na 5ª linha */     
+    border-radius: 20%;
+}
+
+article p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color--);
+    margin: 20pxs;
+    border: 1px var(--primary-color);
+    padding: 25px;
+    border: 3px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco transparente */
+    border-radius: 20%;
+    }
+/*DIV*/
+/*SECTION*/
+section {
+    height: 270px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 30px);
+    
+}
+
+section p:first-of-type {
+    padding: 30px;
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+section p:nth-of-type(2) {
+    padding: 30px;
+    grid-column: 4/7;
+    grid-row: 3;
+}
+
+h2 {
+    grid-column: 3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+section img{
+    grid-column: 3;
+    grid-row: 3/6;
+    border-radius: 50%;
+    min-width: 150px;
+    min-height: 140px;
+    max-width: 170px;
+    max-width: 160px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+/* SECTION 2 */
+section:nth-of-type(2) {
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: 50px 35px 170px 25px;
+  }
+  
+  /*SEQUENCY IMG*/
+  /*    IMG 1       */
+  figure:nth-of-type(1) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+/*    IMG 2     */
+figure:nth-of-type(2) {
+    grid-row: 3;
+    grid-column: 2;
+  }
+/*    IMG 3     */
+figure:nth-of-type(3) {
+    grid-row: 3;
+    grid-column: 3;
+  }
+
+/*    IMG 4     */
+figure:nth-of-type(4) {
+    grid-row: 3;
+    grid-column: 4;
+  }
+
+/*    IMG 5       */
+figure:nth-of-type(5) {
+    grid-row: 3;
+    grid-column: 5;
+  }
+
+/* h2 class */
+.pix {
+    grid-column: 3/4;
+    grid-row: 0;
+}
+
+/* Estilo para a outra imagem */
+img[src="images/teacher.png"] {
+    position: absolute;
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    left: 20px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 1; /* Coloca a outra imagem acima da imagem hero */
+}
+
+
+
+/* Style paragraphs */
+
+/* Remove underlines from social media links */
+.social-media a {
+    text-decoration: none;
+}
+
+.box {
+    background-color: var(--primary-color--);
+    padding: 20px;
+    border: 1px solid rgb(4, 151, 4);
+    margin: 10px; /* Adiciona margens entre os elementos */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: var(--primary-color--); /* Cor de fundo */
+    color: black; /* Cor do texto */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+  }
+  
+  /* Estilos para o texto de direitos autorais */
+  footer p {
+    font-size: 14px; /* Tamanho da fonte */
+  }
+  
+  /* Estilos para os links de redes sociais */
+  footer a {
+
+    display: inline-block; /* Para que os elementos de âncora apareçam lado a lado */
+    margin: 0 10px; /* Espaçamento horizontal entre os ícones das redes sociais */
+  }
+  
+  /* Estilos para as imagens dos ícones de redes sociais */
+  footer img {
+    width: 25px; /* Largura das imagens */
+    height: 25px; /* Altura das imagens */
+    transition: transform 0.2s; /* Adiciona uma transição de escala suave */
+    border-radius: 7px;
+}
+  
+  footer img:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+  }
+  
