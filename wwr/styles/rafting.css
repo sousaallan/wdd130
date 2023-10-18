@@ -1,5 +1,4 @@
-/* Import fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto|Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Young+Serif&display=swap');
 
 /* Define CSS variables for the color scheme */
 :root {
@@ -56,7 +55,7 @@ header ul.navigation a {
 /* Estilo para os links de navegação quando o mouse passa sobre eles */
 header ul.navigation a:hover {
     text-decoration: underline; /* Adicionar sublinhado ao passar o mouse sobre os links */
-    color: var(--accent2-color)
+    color: var(--accent2-color);
 }
 /*HEADER*/
 
