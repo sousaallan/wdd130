@@ -42,8 +42,7 @@ header img {
 /* Estilo para a lista de navegação no cabeçalho */
 nav ul  {
     display: flex;
-    list-style: none; /* Remove os marcadores da lista */
-
+    
 } 
 
 /* Estilo para os links de navegação no cabeçalho */
@@ -285,7 +284,7 @@ form {
     max-width: 400px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
-    margin-left: 40px; 
+    margin-left: 0px; 
 }
 
 label {
