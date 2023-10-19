@@ -42,7 +42,7 @@ header img {
 /* Estilo para a lista de navegação no cabeçalho */
 nav ul  {
     display: flex;
-    
+    list-style: none;
 } 
 
 /* Estilo para os links de navegação no cabeçalho */
