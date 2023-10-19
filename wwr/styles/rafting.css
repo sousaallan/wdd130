@@ -42,6 +42,7 @@ header img {
 /* Estilo para a lista de navegação no cabeçalho */
 nav ul  {
     display: flex;
+    list-style: none; /* Remove os marcadores da lista */
 
 } 
 
@@ -108,7 +109,7 @@ article p {
     background-color: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco transparente */
     border-radius: 5%;
 }
-
+  
 /*DIV*/
 /*SECTION 1*/
 section {
@@ -210,4 +211,108 @@ footer img:hover {
 .box {
     border: 1px solid rgb(4, 151, 4);
     margin: 40px; /* Adiciona margens entre os elementos */
+    height: auto;
+    width: auto;
+}   
+
+section.main_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 370px 30px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+section.main_grid img {
+    max-width: 250px;
+    width: auto;
+    grid-row: 2;
+    padding: 20px;
+    border-radius: 20%;    
+}
+
+div.art {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px 100px;
+    border-radius: 0;
+    
+    
+    padding: 0;
+}
+
+div.art h1.one {
+    grid-column: 1/2;
+    
+}
+
+div.art p.one {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+div.art iframe {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+div.art h1.two {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+div.art p.two {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+div.art p.twoa {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    margin-left: 40px; 
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
