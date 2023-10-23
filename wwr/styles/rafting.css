@@ -48,7 +48,7 @@ nav ul  {
 /* Estilo para os links de navegação no cabeçalho */
 header ul.navigation a {
     text-decoration: none; /* Remover sublinhado dos links */
-    color: white; /* Cor dos links de navegação */
+    color: var(--accent2-color); /* Cor dos links de navegação */
     margin: 0 10px; /* Espaçamento entre os links */
 }
 
@@ -290,6 +290,7 @@ form {
 label {
     display: block;
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
@@ -303,7 +304,9 @@ textarea {
     border-radius: 5px;
 }
 
+input[type="checkbox"]
 input[type="checkbox"] {
+    display: inline;
     margin-right: 5px;
 }
 
