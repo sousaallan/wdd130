@@ -20,6 +20,7 @@
 }
 body {
     background-color: var(--primary-color);
+    
 }
 
 /* Estilo para o cabeçalho */
@@ -29,6 +30,8 @@ header {
     display: grid;
     grid-template-columns: 0.5fr 100px 2fr;
     grid-gap: 10px;
+    text-align: center;
+    width: 100%;
 }
 
 /* Estilo para a imagem do logo */
@@ -214,6 +217,9 @@ footer img:hover {
     width: auto;
 }   
 
+
+/* Contact Us Page */
+
 section.main_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -317,4 +323,119 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Trips Page */
+
+section.trip {
+    display: flex;
+    width: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+section.trip p {
+    margin-top: auto;
+    margin-left: auto;
+    padding: 0;
+    text-align: center;
+}
+
+section.trip form {
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 20px;
+    border: 1px solid blue;
+}
+
+/* Estilos para o elemento de descrição */
+.description {
+    display: none; /* Inicialmente, oculte o elemento de descrição */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    width: 200px;
+}
+
+/* Estilos para o link (âncora) quando o mouse está sobre ele */
+.trip-item a:hover .description {
+    display: block; /* Exiba o elemento de descrição ao passar o mouse sobre a âncora */
+}
+
+div.trip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    margin: 20px;
+    height: 250px;
+    padding: 0;
+}
+
+div.trip-item {
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+    border: 1px solid var(--primary-color);
+    margin: 40px;
+    position: relative;
+    height: 0;
+    border-radius: 5%;
+}
+
+div.trip-item h1 {
+    font-size: 12px;
+}
+
+div.trip-item img {
+    width: 200px
+}
+
+/* Style the "More Rafting Adventures" section */
+section.tripi{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 150PX;
+    height: 350px;
+    BORDER: 1PX SOLID black;
+}
+
+.tripi h2 {
+    grid-column: 3/4;
+    font-size: 29px;
+    margin: 20px 0;
+}
+
+
+
+/* Style the title (h1) within the new section */
+.tripi h3 {
+    grid-row: 2;
+    font-size: 18px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 30PX;
+}
+
+/* Style the image within the new section */
+section.tripi img {
+    grid-row: 3;
+    padding: auto;
+    border-radius: 50%;
+    min-height: 140px;
+    max-width: 160px;
+    padding: 10px;
 }
