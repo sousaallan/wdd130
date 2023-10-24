@@ -433,9 +433,114 @@ section.tripi{
 /* Style the image within the new section */
 section.tripi img {
     grid-row: 3;
-    padding: auto;
+    padding: 20px;
     border-radius: 50%;
     min-height: 140px;
     max-width: 160px;
     padding: 10px;
 }
+
+/* INDEX PAGE */
+body.full {
+    margin: 0;
+}
+
+div.full {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+    border:0;
+    margin: 0;
+    position: relative;
+    height: 450px;
+    border-radius: 0;
+    text-align:  center;
+    justify-items: right;
+    align-items: end;
+}
+
+div.full img {
+    width: 100%;
+    height: 450px;
+}
+
+div.full h1 {
+    position: absolute;
+    grid-column: 1/2;
+    
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 260px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px ;
+    border: 1px solid black;
+}
+
+section.index form {
+    padding: 20px;
+}
+
+section.index a {
+    padding: 20px;
+}
+
+section.index > :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+section.index img {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    width: 400px;
+    height: 200px;
+}
+section.index h1 {
+    position:absolute;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+    margin-left: 250px
+}
+
+section.include {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 190px 1fr 190px 1fr ;
+    grid-template-rows: 1fr;
+    height: 360px;
+    margin-top: 100px;
+    border: 1px solid black;
+}
+
+section.include p:first-of-type {
+    grid-column: 2/3;
+    grid-row: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+section.include p:nth-of-type(2) {
+    grid-column: 4/5;
+    grid-row: 1;
+    padding: 5px;
+    font-size: 16px;
+}
+
+
