@@ -24,6 +24,7 @@ nav a {
 }
 h1 {
   color: steelblue;
+  border-bottom: 1px solid steelblue;
 }
 main img {
   width: 140px;
@@ -32,9 +33,11 @@ main img {
   padding: 2px;
   box-shadow: 0 0 30px;
   float: right;
+  margin-top: 20px;
 }
 p {
   padding: 0;
+  margin-top: 20px;
 }
 /*main{
 }*/
